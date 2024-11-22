@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CucumberJava.iml" filepath="$PROJECT_DIR$/.idea/CucumberJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven/cucumber-java-skeleton.iml" filepath="$PROJECT_DIR$/maven/cucumber-java-skeleton.iml" />
+    </modules>
+  </component>
+</project>
