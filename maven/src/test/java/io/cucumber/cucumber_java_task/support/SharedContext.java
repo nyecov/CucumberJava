@@ -9,7 +9,6 @@ public class SharedContext {
     private List<Item> firstList = new ArrayList<>();
     private List<Item> secondList = new ArrayList<>();
 
-    // Public zero-argument constructor
     public SharedContext() {
     }
 

@@ -12,6 +12,5 @@ public class WhenSteps {
 
     @When("I compare both lists")
     public void iCompareBothLists() {
-        // Optional: Add any logic here if needed for intermediate steps
     }
 }

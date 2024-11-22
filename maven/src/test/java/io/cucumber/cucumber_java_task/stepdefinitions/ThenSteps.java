@@ -34,28 +34,23 @@ public class ThenSteps {
             }
         }
 
-        // Now check for detailed column mismatches
         for (int i = 0; i < firstList.size(); i++) {
             Item firstItem = firstList.get(i);
             Item secondItem = secondList.get(i);
 
-            // Check for name mismatch
             if (!firstItem.getName().equals(secondItem.getName())) {
                 System.out.println("Discrepancy in name for item " + i + ": '" + firstItem.getName() + "' vs '" + secondItem.getName() + "'");
             }
 
-            // Check for price mismatch
             if (firstItem.getPrice() != secondItem.getPrice()) {
                 System.out.println("Discrepancy in price for item " + i + ": " + firstItem.getPrice() + " vs " + secondItem.getPrice());
             }
 
-            // Check for category mismatch
             if (!firstItem.getCategory().equals(secondItem.getCategory())) {
                 System.out.println("Discrepancy in category for item " + i + ": '" + firstItem.getCategory() + "' vs '" + secondItem.getCategory() + "'");
             }
         }
 
-        // Ensure all items match
         for (Item item : firstList) {
             assertTrue(secondList.contains(item), "Item missing in second list: " + item);
         }
