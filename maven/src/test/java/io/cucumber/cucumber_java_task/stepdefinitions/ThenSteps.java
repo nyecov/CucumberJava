@@ -22,19 +22,7 @@ public class ThenSteps {
 
         assertTrue(firstList.size() == secondList.size(), "Lists do not have the same size");
 
-        for (Item item : firstList) {
-            if (!secondList.contains(item)) {
-                System.out.println("Discrepancy: Item in first list not found in second list: " + item);
-            }
-        }
-
-        for (Item item : secondList) {
-            if (!firstList.contains(item)) {
-                System.out.println("Discrepancy: Item in second list not found in first list: " + item);
-            }
-        }
-
-        for (int i = 0; i < firstList.size(); i++) {
+        /*for (int i = 0; i < firstList.size(); i++) {
             Item firstItem = firstList.get(i);
             Item secondItem = secondList.get(i);
 
@@ -49,7 +37,7 @@ public class ThenSteps {
             if (!firstItem.getCategory().equals(secondItem.getCategory())) {
                 System.out.println("Discrepancy in category for item " + i + ": '" + firstItem.getCategory() + "' vs '" + secondItem.getCategory() + "'");
             }
-        }
+        }*/
 
         for (Item item : firstList) {
             assertTrue(secondList.contains(item), "Item missing in second list: " + item);
